@@ -1,6 +1,121 @@
-<title>Cari Personal Trainer Landing Page</title>
-<html>
-Hello world!
-  <hr>
-Olá mundo
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley | Personal Trainer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #111827, #1f2933);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #22c55e;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #d1d5db;
+            margin-bottom: 24px;
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            background-color: #22c55e;
+            color: #111827;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .links a:hover {
+            background-color: #16a34a;
+            transform: scale(1.02);
+        }
+
+        footer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Foto de perfil -->
+        <img 
+            src="https://via.placeholder.com/300" 
+            alt="Wesley Personal Trainer" 
+            class="profile-img"
+        >
+
+        <!-- Nome -->
+        <h1>Wesley Personal</h1>
+
+        <!-- Descrição -->
+        <p>
+            Personal Trainer • Preparador Físico  
+            <br>
+            Foco em performance, saúde e resultados
+        </p>
+
+        <!-- Links -->
+        <div class="links">
+            <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+                Fale comigo no WhatsApp
+            </a>
+
+            <a href="https://instagram.com/seuinstagram" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://forms.gle/seuformulario" target="_blank">
+                Avaliação física online
+            </a>
+
+            <a href="https://seusite.com" target="_blank">
+                Conheça meus serviços
+            </a>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            © 2026 • Todos os direitos reservados
+        </footer>
+    </div>
+</body>
 </html>
