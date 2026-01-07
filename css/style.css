@@ -61,6 +61,11 @@ p {
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: #00c4db;
+}
+
 .links a {
     display: block;
     text-decoration: none;
