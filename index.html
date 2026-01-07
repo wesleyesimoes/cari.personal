@@ -5,131 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cari Personal Trainer</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        body {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #111827, #1f2933);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 420px;
-            padding: 24px;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 253px;
-            height: 260px;
-            object-fit: cover;
-            margin-bottom: 16px;
-            filter: invert(100%);
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 8px;
-        }
-
-        p {
-            font-size: 14px;
-            color: #d1d5db;
-            margin-bottom: 24px;
-        }
-
-        .links a {
-            display: block;
-            text-decoration: none;
-            background-color: #00c4db;
-            color: #111827;
-            padding: 14px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-
-        .links a:hover {
-            background-color: #ffffff;
-            transform: scale(1.02);
-        }
-
-        footer {
-            margin-top: 24px;
-            font-size: 12px;
-            color: #9ca3af;
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="container">
-        <!-- Foto de perfil -->
-        <img 
-            src="https://static.wixstatic.com/media/6acca7_d0dd50352e84410692f7f78d5b1968d5~mv2.png" 
-            alt="Cari Personal Trainer" 
-            class="profile-img"
-        >
 
-        <!-- Nome -->
-        <h1>Wesley Espala Simões</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">Cari Personal Trainer</h1>
 
-        <!-- Descrição -->
-        <p>
-            Cari Personal Trainer
-            <br>
-            Treine com quem estuda. Treine com quem treina.
-            <br>Treine com o Cari!
-            <br><br>
-            Meu sonho é fazer você alcançar seu objetivo!
-        </p>
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
 
-        <!-- Links -->
-        <div class="links">
-            <a href="https://wa.me/message/KWLFMCBJ5SM6E1" target="_blank">
-                Fale comigo no WhatsApp
-            </a>
+            <nav class="nav" id="navMenu">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="items.html">Metodologia</a>
+                <a href="planos.html">Planos</a>
+            </nav>
+        </div>
+    </header>
 
-            <a href="https://www.caripersonal.com.br/index2.html" target="_blank">
-                Conheça meus serviços
-            </a>
-
-            <a href="https://instagram.com/cari.personal" target="_blank">
-                Instagram
-            </a>
-
-            <a href="https://youtube.com/@cari.personal" target="_blank">
-                Youtube
-            </a>
-            
-            <a href="https://www.linkedin.com/in/wesleysimoes" target="_blank">
-                LinkedIn
-            </a> 
-
-            <a href="https://forms.gle/RhHL4EuGRTVNZ7XP8" target="_blank">
-                Primeira anamnese
-            </a>
-            
-            <a href="https://forms.gle/BiidoyLvvjj5d4i16" target="_blank">
-                Troca de treino
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Treinamento personalizado com foco em performance e resultado</h2>
+            <p>
+                Acompanhamento profissional, metodologia clara e evolução real.
+            </p>
+            <a href="planos.html" class="btn-primary">
+                Conhecer os planos
             </a>
         </div>
+    </section>
 
-        <!-- Rodapé -->
-        <footer>
-            © 2026 • Todos os direitos reservados
-        </footer>
-    </div>
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <h3>Quem é o Cari Personal</h3>
+            <p class="section-text">
+                Sou personal trainer e preparador físico, com foco em treinos
+                individualizados, baseados em ciência, acompanhamento próximo
+                e progressão segura. Meu trabalho é direcionado a quem busca
+                saúde, performance e consistência.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section dark" id="servicos">
+        <div class="container">
+            <h3>O que eu entrego</h3>
+
+            <div class="cards">
+                <div class="card">
+                    <h4>Treino Presencial</h4>
+                    <p>
+                        Sessões personalizadas, correção técnica e acompanhamento
+                        constante.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4>Treino Online</h4>
+                    <p>
+                        Planos estruturados, suporte remoto e ajustes periódicos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4>Preparação Física</h4>
+                    <p>
+                        Desenvolvimento de força, resistência e prevenção de lesões.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section">
+        <div class="container">
+            <h3>Diferenciais</h3>
+
+            <ul class="diferenciais">
+                <li>Metodologia baseada em evidência científica</li>
+                <li>Acompanhamento individual e contínuo</li>
+                <li>Planejamento e progressão estruturada</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+        <div class="container">
+            <h3>Treine com orientação profissional de verdade</h3>
+            <a href="planos.html" class="btn-outline">
+                Ver como funciona
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 — Cari Personal Trainer</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
