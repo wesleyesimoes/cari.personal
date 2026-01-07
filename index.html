@@ -5,16 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cari Personal Trainer</title>
 
-    <!-- Fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #111827, #1f2933);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 253px;
+            height: 260px;
+            object-fit: cover;
+            margin-bottom: 16px;
+            filter: invert(100%);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #d1d5db;
+            margin-bottom: 24px;
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            background-color: #00c4db;
+            color: #111827;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .links a:hover {
+            background-color: #ffffff;
+            transform: scale(1.02);
+        }
+
+        footer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="profile-img">
+    <div class="container">
         <!-- Foto de perfil -->
         <img 
             src="https://static.wixstatic.com/media/6acca7_d0dd50352e84410692f7f78d5b1968d5~mv2.png" 
@@ -29,7 +89,8 @@
         <p>
             Cari Personal Trainer
             <br>
-            Treine com quem estuda. Treine com quem treina.
+            Treine com quem estuda.
+            <br>Treine com quem treina.
             <br>Treine com o Cari!
             <br><br>
             Meu sonho é fazer você alcançar seu objetivo!
@@ -40,7 +101,7 @@
             <a href="https://wa.me/message/KWLFMCBJ5SM6E1" target="_blank">
                 Fale comigo no WhatsApp
             </a>
-
+            
             <a href="https://www.caripersonal.com.br/index2.html" target="_blank">
                 Conheça meus serviços
             </a>
