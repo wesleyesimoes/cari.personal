@@ -62,23 +62,27 @@ a {
     text-decoration: none;
     color: #00c4db;
 }
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .links a {
-    display: block;
+	margin-bottom: 10px;
+    /*display: block;
     text-decoration: none;
     background-color: #00c4db;
     color: #111827;
     padding: 12px;
-    margin-bottom: 10px;
     border-radius: 10px;
     font-weight: bold;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;*/
 }
 
-.links a:hover {
+/*.links a:hover {
     background-color: #ffffff;
     transform: scale(1.02);
-}
+}*/
 
 /* HEADER */
 .header {
@@ -119,6 +123,7 @@ a {
 
 .nav a:hover {
     background-color: rgba(255,255,255,0.05);
+	color: #00c4db;
 }
 
 .menu-toggle {
@@ -146,25 +151,72 @@ a {
 
 /* BUTTONS */
 .btn-primary {
-    display: inline-block;
+    /*display: inline-block;
     background: var(--primary);
     color: var(--dark);
-    /*padding: 14px 28px;*/
+    //padding: 14px 28px;
 	padding: 10px 14px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 600;*/
+	display: inline-block;
+    text-decoration: none;
+    color: #111827;
+    padding: 12px;
+    border-radius: 10px;
+	font-weight: bold;
+	background-color: #00c4db;
+    text-align: center;
+	max-width: fit-content;
+    /*transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;*/
+}
+.btn-primary:hover {
+    background-color: #ffffff;
+	transform: scale(1.02);
+	color: #111827;
 }
 
 .btn-outline {
     display: inline-block;
-    border: 2px solid var(--primary);
+	text-decoration: none;
     color: var(--primary);
-    padding: 10px 14px;
-    border-radius: 8px;
-    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
     font-weight: 600;
+	border: 2px solid var(--primary);
+	transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
 }
+.btn-outline:hover {
+    background-color: #ffffff;
+	transform: scale(1.02);
+	color: #111827;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: #00c4db;
+    color: #111827;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+	max-width: -webkit-fill-available;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+	transform: scale(1.02);
+	color: #111827;
+}
+
 
 /* CARDS */
 .cards {
