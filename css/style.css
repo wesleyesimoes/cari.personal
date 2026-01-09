@@ -225,11 +225,9 @@ a:hover {
     gap: 20px;
 }
 
-.cards2 {
-    display: grid;
+.cards-menu-inf {
     grid-template-columns: 1fr;
     gap: 20px;
-	justify-items: center;
 }
 
 .card {
