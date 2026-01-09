@@ -226,6 +226,7 @@ a:hover {
 }
 
 .cards-menu-inf {
+	text-align: center;
     grid-template-columns: 1fr;
     gap: 20px;
 }
