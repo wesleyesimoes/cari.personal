@@ -230,7 +230,7 @@ a:hover {
     grid-template-columns: 1fr;
     gap: 20px;*/
 	display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 40px;
     gap: 12px;
