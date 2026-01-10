@@ -197,7 +197,7 @@ a:hover {
 	border: 2px solid #ffffff;
 }
 
-.btn {
+.btn-index {
     display: block;
     text-decoration: none;
     background-color: #00c4db;
@@ -212,7 +212,7 @@ a:hover {
         background-color 0.2s ease; */
 }
 
-.btn:hover {
+.btn-index:hover {
     background-color: #ffffff;
 	/* transform: scale(1.02); */
 	color: #111827;
