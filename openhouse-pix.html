@@ -31,21 +31,31 @@
 
 <section class="section">
     <div class="container">
-        <h3>Calendário de atendimentos</h3>
+        <h3>Área do Pix</h3>
 
         <p class="section-text">
-            Confira se o Cari possui disponibilidade de atendimento no seu horário pretendido.			
+            Agradecemos IMENSAMENTE pela contribuição com o nosso sofrimento nos exercícios e com a ajuda na nossa casinha :)
         </p>
+		<br>
+		<p>Lembre-se de enviar na mensagem do Pix, o nome da pessoa e os exercícios</p>
     </div>
 </section>
 
 
-<!-- <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 75%;"><iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&ctz=America%2FSao_Paulo&showPrint=0&hl=pt_BR&mode=WEEK&showNav=0&src=ZTRkMWI3ZDQyM2I4ZjBiNzE4ZTEyYWI5MjY1MDFmMTkwMWJlYzc2OWU3NWM2OTIyNjZiNTRhZmM5ODNiN2ZhNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%23009688" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div> -->
-<!-- <section class="section dark"> -->
 <div class="container">
-        <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&ctz=America%2FSao_Paulo&showPrint=0&hl=pt_BR&mode=WEEK&showNav=0&src=ZTRkMWI3ZDQyM2I4ZjBiNzE4ZTEyYWI5MjY1MDFmMTkwMWJlYzc2OWU3NWM2OTIyNjZiNTRhZmM5ODNiN2ZhNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%23009688" style="border:solid 1px #777" width="380" height="800" frameborder="0" scrolling="no"></iframe>
-   </div>
-</section>
+		<img src="img/pix-qrcode.jpeg">
+		<br><br>
+		<p>Chave Pix (copia e cola)</p>
+		<br>
+		<input type="hidden" value="00020126720014br.gov.bcb.pix0114+55419885313280232Cofrinho de Wesley Espala Simoes5204000053039865802BR5920Wesley Espala Simoes6008Curitiba61088025012062270523COFRNzI0NzgzOTAwMDAwMDM6304B47F" id="TextPix">
+		
+		<div class="card" id="CardPix">00020126720014br.gov.bcb.pix0114+55419885313280232Cofrinho de Wesley Espala Simoes5204000053039865802BR5920Wesley Espala Simoes6008Curitiba61088025012062270523COFRNzI0NzgzOTAwMDAwMDM6304B47F
+		</div>
+		<br>
+		<a class="btn-primary" onclick="CopiaPixOculto()">Copiar chave Pix</a>
+</div>
+
+<br>
 
 <section class="cta">
     <div class="container">
@@ -68,5 +78,37 @@
 </footer>
 
 <script src="js/main.js"></script>
+
+<script>
+function CopiaPIX() {
+  // Get the text field
+  var copyText = document.getElementById("TextPix");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Texto copiado " + copyText.value);
+}
+</script>
+
+<script>
+function CopiaPixOculto() {
+  // Get the value of the hidden input field
+  const copyText = document.getElementById("TextPix").value;
+
+  // Use the Clipboard API to write the text
+  navigator.clipboard.writeText(copyText).then(() => {
+    // Optional: Provide user feedback that the text was copied
+    alert("Chave Pix copiada: " + copyText);
+  }).catch(err => {
+    console.error('Could not copy text: ', err);
+  });
+}
+</script>
 </body>
 </html>
