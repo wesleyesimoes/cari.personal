@@ -29,19 +29,15 @@ body {
             margin-bottom: 16px;
             filter: invert(100%);
 }
-
 .image-header {
 			/* height: 60px; */
             filter: invert(100%);
 }
-
-/*.image-consultoria{max-width:100%;max-height:100%;border-radius:12px}*/
 .image-consultoria{border-radius:12px}
 
 .section {
     padding: 32px 0;
 }
-
 .section.dark {
     background-color: var(--dark-light);
 }
@@ -50,7 +46,6 @@ h1 {
     font-size: 24px;
     margin-bottom: 8px;
 }
-
 h3 {
     font-size: 28px;
     margin-bottom: 24px;
@@ -68,7 +63,6 @@ a:hover {
     text-decoration: none;
     color: #ffffff;
 }
-
 .links a {
 	margin-bottom: 10px;
     /*display: block;
@@ -85,7 +79,6 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 th {
   padding: 8px;
   text-align: center;
@@ -100,7 +93,6 @@ th {
     font-weight:700;
 	border-bottom:none; */
 }
-
 td {
   padding: 8px;
   text-align: center;
@@ -121,7 +113,6 @@ td {
     top: 0;
     z-index: 10;
 }
-
 .header-content {
     display: flex;
     justify-content: space-evenly;
@@ -144,13 +135,11 @@ td {
     right: 20px;
     border-radius: 8px;
 }
-
 .nav a {
     padding: 12px 16px;
     text-decoration: none;
     color: var(--text);
 }
-
 .nav a:hover {
     background-color: rgba(255,255,255,0.05);
 	color: #00c4db;
@@ -167,12 +156,10 @@ td {
     padding: 48px 0;
     text-align: center;
 }
-
 .hero h2 {
     font-size: 32px;
     margin-bottom: 16px;
 }
-
 .hero p {
     color: #cbd5f5;
     margin-bottom: 32px;
@@ -206,7 +193,6 @@ td {
 	/* transform: scale(1.02); */
 	color: #111827;
 }
-
 .btn-outline {
     display: inline-block;
 	text-decoration: none;
@@ -225,7 +211,6 @@ td {
 	color: #111827;
 	border: 2px solid #ffffff;
 }
-
 .btn-index {
     display: block;
     text-decoration: none;
@@ -240,13 +225,11 @@ td {
         transform 0.2s ease,
         background-color 0.2s ease; */
 }
-
 .btn-index:hover {
     background-color: #ffffff;
 	/* transform: scale(1.02); */
 	color: #111827;
 }
-
 
 /* CARDS */
 .cards {
@@ -254,7 +237,6 @@ td {
     grid-template-columns: 1fr;
     gap: 20px;
 }
-
 .cards-menu-inf {
 	/*text-align: center;
     grid-template-columns: 1fr;
@@ -265,14 +247,12 @@ td {
     margin-top: 40px;
     gap: 12px;
 }
-
 .card {
     background: #020617;
     padding: 24px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.05);
 }
-
 .card h4 {
     color: var(--primary);
     margin-bottom: 12px;
@@ -281,13 +261,11 @@ td {
 .diferenciais {
     list-style: none;
 }
-
 .diferenciais li {
     margin-bottom: 12px;
     padding-left: 16px;
     position: relative;
 }
-
 .diferenciais li::before {
     content: "•";
     color: var(--primary);
@@ -327,11 +305,9 @@ td {
         flex-direction: row;
         background: none;
     }
-
     .menu-toggle {
         display: none;
     }
-
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -339,12 +315,10 @@ td {
 		display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
     .hero h2 {
         font-size: 42px;
     }
 }
-
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -371,3 +345,11 @@ td {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+.rt-value{font-weight:700; font-size:34px; line-height:1;}
+.rt-value .rt-start{color:#fff; }
+.rt-value .rt-arrow{color:#94a3b8; font-weight:600; font-size:24px; margin:0 6px;}
+.rt-value .rt-end{color:var(--primary); }
+.rt-value .rt-unit{font-size:18px; color:#94a3b8; font-weight:600; margin-left:2px;}
+.rt-diff-up{ color:var(--primary); font-weight:700; }
+.rt-diff-down{ color:#f472b6; font-weight:700; }
