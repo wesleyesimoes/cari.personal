@@ -35,6 +35,16 @@ body {
 }
 .image-consultoria{border-radius:12px}
 
+img {
+/* Remove a capacidade de arrastar, selecionar ou destacar a imagem */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+    -webkit-touch-callout: none; /* Bloqueia o menu de toque longo no iOS/Android */
+}
+
 .section {
     padding: 32px 0;
 }
