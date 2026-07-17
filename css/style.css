@@ -335,6 +335,10 @@ td {
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
+	.cards-img {
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .hero h2 {
         font-size: 42px;
