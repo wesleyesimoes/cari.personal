@@ -8,30 +8,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
 	<script src="../js/analytics.js"></script>
-	<script>document.addEventListener('contextmenu', function(event) {
+	<!-- <script>document.addEventListener('contextmenu', function(event) {
     event.preventDefault(); // Impede o menu do navegador de abrir
     alert('Aviso: Conteúdo protegido! Cari Personal Trainer.');
-  });</script>
+  });</script> -->
 </head>
 <body oncontextmenu="return false;">
 
-<header class="header">
-    <div class="container header-content">
-        <img src="../img/cari-logomenu.png" alt="Cari Personal Trainer logo" class="image-header">
-        <h1 class="logo">
-			<a href="../inicial.html">Cari Personal Trainer</a>
-		</h1>
-
-        <button class="menu-toggle" id="menuToggle">☰</button>
-
-        <nav class="nav" id="navMenu">
-            <a href="../inicial.html">Início</a>
-            <a href="../metodologia.html">Metodologia</a>
-            <a href="../planos.html">Planos</a>
-			<a href="../social.html">Redes sociais</a>
-        </nav>
-    </div>
-</header>
+<div class="container rt-page">
+  <header class="rt-header">
+    <div class="rt-brand">
+      <img class="rt-logo" src="../img/cari-logomenu.png" alt="Cari Personal Trainer">
+		<div>
+			<div><h1 class="logo">CARI PERSONAL TRAINER</h1></div>
+			<div class="rt-brand-tag">www.caripersonal.com.br | @cari.personal</div>
+			<!-- <div>@cari.personal</div> -->
+		</div>
+      </div>
+</div>
+<!--     <div class="rt-contact">
+      <div>www.caripersonal.com.br</div>
+      <div>@cari.personal</div>
+    </div> -->
+  </header>
 
 <section class="section">
     <div class="container">
@@ -116,7 +115,7 @@
 <footer class="footer">
     <p>CARI PERSONAL TREINAMENTO FISICO LTDA</p>
 </footer>
-
+</div>
 <script src="../js/main.js"></script>
 
 </body>

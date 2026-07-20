@@ -46,7 +46,8 @@ img {
 }
 
 .section {
-    padding: 32px 0;
+    /* padding: 32px 0; */
+	padding: 24px 0;
 }
 .section.dark {
     background-color: var(--dark-light);
@@ -139,10 +140,29 @@ td {
     height: 72px;
 }
 
+.rt-page{
+    padding-top: 12px;
+}
+.rt-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.rt-brand{ display:flex; align-items:center; gap:16px; }
+.rt-logo{ width:56px; height:56px; filter:invert(100%); display:block; }
+.rt-brand-name{ font-weight:700; font-size:22px; color:#fff; }
+.rt-brand-tag{ font-size:11.5px; color:#94a3b8; text-transform:uppercase; text-align: center; }
+.rt-contact{ text-align:right; }
+.rt-contact div{ font-size:15px; font-weight:700; color:#fff; }
+.rt-contact div + div{ margin-top:4px; }
+
 .logo {
-    /* font-size: 18px; */
+    font-size: 22px;
     font-weight: 700;
     color: var(--primary);
+	padding: 0 2px 0 2px;
 }
 
 .nav {
