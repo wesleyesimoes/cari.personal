@@ -33,7 +33,7 @@ body {
 			/* height: 60px; */
             filter: invert(100%);
 }
-.image-consultoria{border-radius:12px}
+.image-consultoria{border-radius:10px}
 
 img {
 /* Remove a capacidade de arrastar, selecionar ou destacar a imagem */
@@ -51,6 +51,7 @@ img {
 }
 .section.dark {
     background-color: var(--dark-light);
+	border-radius: 10px;
 }
 
 h1 {
@@ -176,12 +177,12 @@ td {
     position: absolute;
     top: 72px;
     right: 20px;
-    border-radius: 8px;
 }
 .nav a {
     padding: 12px 16px;
     text-decoration: none;
     color: var(--text);
+	border-radius: 10px;
 }
 .nav a:hover {
     background-color: rgba(255,255,255,0.05);
@@ -293,7 +294,7 @@ td {
 .card {
     background: #020617;
     padding: 24px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.05);
 }
 .card h4 {
@@ -347,6 +348,7 @@ td {
         position: static;
         flex-direction: row;
         background: none;
+		border-radius: 10px;
     }
     .menu-toggle {
         display: none;
