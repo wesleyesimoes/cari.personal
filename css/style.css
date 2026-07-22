@@ -75,6 +75,7 @@ h3 {
 
 p {
     line-height: 1.6;
+	padding-bottom: 10px;
 }
 
 a {
@@ -371,6 +372,16 @@ td {
     .hero h2 {
         font-size: 42px;
     }
+}
+
+@media (max-width: 480px) {
+  table th {font-size: 16px;}
+  table td {font-size: 14px;}
+  .rt-page{
+	border:0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 /* Style the button that is used to open and close the collapsible content */
