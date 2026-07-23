@@ -164,6 +164,13 @@ td {
 .rt-contact{ text-align:right; }
 .rt-contact div{ font-size:15px; font-weight:700; color:#fff; }
 .rt-contact div + div{ margin-top:4px; }
+.rt-value{font-weight:700; font-size:34px; line-height:1;}
+.rt-value .rt-start{color:#fff; }
+.rt-value .rt-arrow{color:#94a3b8; font-weight:600; font-size:24px; margin:0 6px;}
+.rt-value .rt-end{color:var(--primary); }
+.rt-value .rt-unit{font-size:18px; color:#94a3b8; font-weight:600; margin-left:2px;}
+.rt-diff-up{ color:var(--primary); font-weight:700; }
+.rt-diff-down{ color:#f472b6; font-weight:700; }
 
 .logo {
     font-size: 22px;
@@ -378,6 +385,8 @@ td {
 
 @media (max-width: 500px) {
   table th, table td {font-size: 15px;}
+  .rt-brand-name{ font-weight:700; font-size:22px; color:var(--primary); }
+  .rt-brand-tag{ font-size:11.5px; color:#94a3b8; text-transform:uppercase; text-align: left; }
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -405,11 +414,3 @@ td {
   overflow: hidden;
   background-color: #f1f1f1;
 }
-
-.rt-value{font-weight:700; font-size:34px; line-height:1;}
-.rt-value .rt-start{color:#fff; }
-.rt-value .rt-arrow{color:#94a3b8; font-weight:600; font-size:24px; margin:0 6px;}
-.rt-value .rt-end{color:var(--primary); }
-.rt-value .rt-unit{font-size:18px; color:#94a3b8; font-weight:600; margin-left:2px;}
-.rt-diff-up{ color:var(--primary); font-weight:700; }
-.rt-diff-down{ color:#f472b6; font-weight:700; }
