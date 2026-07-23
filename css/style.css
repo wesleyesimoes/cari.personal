@@ -146,7 +146,7 @@ td {
 }
 
 .rt-page{
-	border:0.5px solid;
+	/* border:0.5px solid; */
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -378,11 +378,6 @@ td {
 
 @media (max-width: 500px) {
   table th, table td {font-size: 15px;}
-  .rt-page{
-	border:0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
 }
 
 /* Style the button that is used to open and close the collapsible content */
