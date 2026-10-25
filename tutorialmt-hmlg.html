@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Personal Trainer | Montagem de treino sem acompanhamento</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/analytics.js"></script>
+</head>
+
+<style>
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+ 
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  overflow: auto;
+  white-space: nowrap;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 10%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.3;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+<body id="topo">
+
+<header class="header">
+    <div class="container header-content">
+        <img src="img/cari-logomenu.png" alt="Cari Personal Trainer logo" class="image-header">
+        <h1 class="logo">
+			<a href="inicial.html">Cari Personal Trainer</a>
+		</h1>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="nav" id="navMenu">
+            <a href="inicial.html">Início</a>
+            <a href="metodologia.html">Metodologia</a>
+            <a href="planos.html">Planos</a>
+			<a href="social.html">Redes sociais</a>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h3>Entendendo o aplicativo e o protocolo de treino</h3>
+
+        <p class="section-text">
+            Veja o tutorial de como treinar usando o app Master Training.
+        </p>
+	</div>
+</section>
+
+<section class="section dark">
+    <div class="container">
+			<div class="container">
+				  <div class="mySlides">
+					<div class="numbertext">1 / 10</div>
+					<img src="img\tutorialmt\1.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">2 / 10</div>
+					<img src="img\tutorialmt\2.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">3 / 10</div>
+					<img src="img\tutorialmt\3.png" style="width:100%">
+				  </div>
+					
+				  <div class="mySlides">
+					<div class="numbertext">4 / 10</div>
+					<img src="img\tutorialmt\4.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">5 / 10</div>
+					<img src="img\tutorialmt\5.png" style="width:100%">
+				  </div>
+					
+				  <div class="mySlides">
+					<div class="numbertext">6 / 10</div>
+					<img src="img\tutorialmt\6.png" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides">
+					<div class="numbertext">7 / 10</div>
+					<img src="img\tutorialmt\7.png" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides">
+					<div class="numbertext">8 / 10</div>
+					<img src="img\tutorialmt\8.png" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides">
+					<div class="numbertext">9 / 10</div>
+					<img src="img\tutorialmt\9.png" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides">
+					<div class="numbertext">10 / 10</div>
+					<img src="img\tutorialmt\10.png" style="width:100%">
+				  </div>
+					
+				  <a class="prev" onclick="plusSlides(-1)">❮</a>
+				  <a class="next" onclick="plusSlides(1)">❯</a>
+
+				  <div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+
+				  <div class="row">
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\1.png" style="width:100%" onclick="currentSlide(1)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\2.png" style="width:100%" onclick="currentSlide(2)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\3.png" style="width:100%" onclick="currentSlide(3)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\4.png" style="width:100%" onclick="currentSlide(4)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\5.png" style="width:100%" onclick="currentSlide(5)">
+					</div>    
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\6.png" style="width:100%" onclick="currentSlide(6)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\7.png" style="width:100%" onclick="currentSlide(7)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\8.png" style="width:100%" onclick="currentSlide(8)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\9.png" style="width:100%" onclick="currentSlide(9)">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="img\tutorialmt\10.png" style="width:100%" onclick="currentSlide(10)">
+					</div>
+				  </div>
+				</div>
+	</div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h3>Atendimento profissional e direcionado</h3>
+        <p>
+            Para informações sobre disponibilidade ou outras informações,
+            o contato é feito de forma individual.
+        </p>
+		<br>
+        <a href="https://wa.me/5541988531328?text=Olá Cari. Vim o plano de TREINO SEM ACOMPANHAMENTO através do site e gostaria de mais informações."
+           class="btn-outline" target="_blank"> Entrar em contato
+        </a>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>CARI PERSONAL TREINAMENTO FISICO LTDA</p>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
