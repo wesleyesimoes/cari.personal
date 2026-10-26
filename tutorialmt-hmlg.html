@@ -11,13 +11,10 @@
 </head>
 
 <style>
-div.scroll-container {
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
+img {
+  vertical-align: middle;
 }
- 
-/* Position the image container (needed to position the left and right arrows) */
+
 .container {
   position: relative;
 }
@@ -65,14 +62,20 @@ div.scroll-container {
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+/*  padding: 10px 12px; */
+/*  position: absolute; */
+/*  top: 0; */
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
 
 .row:after {
-  overflow: auto;
-  white-space: nowrap;
   content: "";
   display: table;
   clear: both;
@@ -81,7 +84,7 @@ div.scroll-container {
 /* Six columns side by side */
 .column {
   float: left;
-  width: 20%;
+  width: 16.66%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -122,92 +125,93 @@ div.scroll-container {
 </section>
 
 <section class="section dark">
-			<div class="container">
-			<div class="scroll-container">
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\1.png" style="width:100%" onclick="currentSlide(1)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\2.png" style="width:100%" onclick="currentSlide(2)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\3.png" style="width:100%" onclick="currentSlide(3)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\4.png" style="width:100%" onclick="currentSlide(4)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\5.png" style="width:100%" onclick="currentSlide(5)">
-					</div>    
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\6.png" style="width:100%" onclick="currentSlide(6)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\7.png" style="width:100%" onclick="currentSlide(7)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\8.png" style="width:100%" onclick="currentSlide(8)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\9.png" style="width:100%" onclick="currentSlide(9)">
-					</div>
-					<div class="column">
-					  <img class="demo cursor" src="img\tutorialmt\10.png" style="width:100%" onclick="currentSlide(10)">
-					</div>
-				  </div>
-				  <div class="mySlides">
-					<div class="numbertext">1 / 10</div>
-					<img src="img\tutorialmt\1.png" style="width:100%">
-				  </div>
+	<div class="container">
+	<div class="row">
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\1.png" style="width:100%" onclick="currentSlide(1)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\2.png" style="width:100%" onclick="currentSlide(2)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\3.png" style="width:100%" onclick="currentSlide(3)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\4.png" style="width:100%" onclick="currentSlide(4)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\5.png" style="width:100%" onclick="currentSlide(5)">
+			</div>    
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\6.png" style="width:100%" onclick="currentSlide(6)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\7.png" style="width:100%" onclick="currentSlide(7)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\8.png" style="width:100%" onclick="currentSlide(8)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\9.png" style="width:100%" onclick="currentSlide(9)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img\tutorialmt\10.png" style="width:100%" onclick="currentSlide(10)">
+			</div>
+		</div>
+		  <div class="mySlides">
+			<div class="numbertext">1 / 10</div>
+			<img src="img\tutorialmt\1.png" style="width:100%">
+		  </div>
 
-				  <div class="mySlides">
-					<div class="numbertext">2 / 10</div>
-					<img src="img\tutorialmt\2.png" style="width:100%">
-				  </div>
+		  <div class="mySlides">
+			<div class="numbertext">2 / 10</div>
+			<img src="img\tutorialmt\2.png" style="width:100%">
+		  </div>
 
-				  <div class="mySlides">
-					<div class="numbertext">3 / 10</div>
-					<img src="img\tutorialmt\3.png" style="width:100%">
-				  </div>
-					
-				  <div class="mySlides">
-					<div class="numbertext">4 / 10</div>
-					<img src="img\tutorialmt\4.png" style="width:100%">
-				  </div>
+		  <div class="mySlides">
+			<div class="numbertext">3 / 10</div>
+			<img src="img\tutorialmt\3.png" style="width:100%">
+		  </div>
+			
+		  <div class="mySlides">
+			<div class="numbertext">4 / 10</div>
+			<img src="img\tutorialmt\4.png" style="width:100%">
+		  </div>
 
-				  <div class="mySlides">
-					<div class="numbertext">5 / 10</div>
-					<img src="img\tutorialmt\5.png" style="width:100%">
-				  </div>
-					
-				  <div class="mySlides">
-					<div class="numbertext">6 / 10</div>
-					<img src="img\tutorialmt\6.png" style="width:100%">
-				  </div>
-				  
-				  <div class="mySlides">
-					<div class="numbertext">7 / 10</div>
-					<img src="img\tutorialmt\7.png" style="width:100%">
-				  </div>
-				  
-				  <div class="mySlides">
-					<div class="numbertext">8 / 10</div>
-					<img src="img\tutorialmt\8.png" style="width:100%">
-				  </div>
-				  
-				  <div class="mySlides">
-					<div class="numbertext">9 / 10</div>
-					<img src="img\tutorialmt\9.png" style="width:100%">
-				  </div>
-				  
-				  <div class="mySlides">
-					<div class="numbertext">10 / 10</div>
-					<img src="img\tutorialmt\10.png" style="width:100%">
-				  </div>
-					
-				  <a class="prev" onclick="plusSlides(-1)">❮</a>
-				  <a class="next" onclick="plusSlides(1)">❯</a>
-				</div>
+		  <div class="mySlides">
+			<div class="numbertext">5 / 10</div>
+			<img src="img\tutorialmt\5.png" style="width:100%">
+		  </div>
+			
+		  <div class="mySlides">
+			<div class="numbertext">6 / 10</div>
+			<img src="img\tutorialmt\6.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">7 / 10</div>
+			<img src="img\tutorialmt\7.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">8 / 10</div>
+			<img src="img\tutorialmt\8.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">9 / 10</div>
+			<img src="img\tutorialmt\9.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">10 / 10</div>
+			<img src="img\tutorialmt\10.png" style="width:100%">
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+
+	</div>
 </section>
 
 <section class="cta">
