@@ -444,7 +444,7 @@ td {
   text-decoration: none;
 }
 
-.blink {
+.blink, .blink:hover {
 animation: blinker 2.0s linear infinite;
 color: #00c4db;
 margin-top: auto;
