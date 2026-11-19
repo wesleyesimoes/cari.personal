@@ -239,6 +239,7 @@ td {
 	background-color: #00c4db;
     text-align: center;
 	max-width: fit-content;
+	margin-top: auto;
     /*transition:
         transform 0.2s ease,
         background-color 0.2s ease;*/
@@ -307,6 +308,11 @@ td {
     padding: 24px;
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.05);
+	/* alteração aqui */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/*justify-content: space-between;*/
 }
 .card h4 {
     color: var(--primary);
@@ -414,4 +420,37 @@ td {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+/* ===== Ajustes para o novo modelo de planos (consultoria mensal) ===== */
+.preco { font-size: 15px; }
+.preco strong { color: #ffffff; font-size: 24px; }
+
+.faq h4 { color: var(--primary); margin: 16px 0 4px; }
+
+.card.plano { display: flex; flex-direction: column; align-items: flex-start; }
+.card.plano p { flex-grow: 1; }
+.card.destaque { border: 1px solid var(--primary); }
+
+@media (min-width: 768px) {
+    .cards.cards-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+.card,
+.card:visited,
+.card:hover,
+.card:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.blink {
+animation: blinker 2.0s linear infinite;
+color: #00c4db;
+margin-top: auto;
+}
+@keyframes blinker {
+50% {
+opacity: 0;
+}
 }
