@@ -423,14 +423,8 @@ td {
 }
 
 /* ===== Ajustes para o novo modelo de planos (consultoria mensal) ===== */
-.preco { font-size: 15px; }
-.preco strong { color: #ffffff; font-size: 24px; }
-
 .faq h4 { color: var(--primary); margin: 16px 0 4px; }
 
-.card.plano { display: flex; flex-direction: column; align-items: flex-start; }
-.card.plano p { flex-grow: 1; }
-.card.destaque { border: 1px solid var(--primary); }
 
 @media (min-width: 768px) {
     .cards.cards-2 { grid-template-columns: repeat(2, 1fr); }
@@ -444,7 +438,11 @@ td {
   text-decoration: none;
 }
 
-.blink, .blink:hover {
+.blink, .blink:hover { animation: blinker 2s ease-in-out 6; color: #00c4db; }
+@keyframes blinker { 50% { color: white; } }
+/*@media (prefers-reduced-motion: reduce) { .blink { animation: none; } }
+
+/*.blink, .blink:hover {
 animation: blinker 2.0s linear infinite;
 color: #00c4db;
 margin-top: auto;
@@ -453,4 +451,4 @@ margin-top: auto;
 50% {
 opacity: 0;
 }
-}
+}*/
