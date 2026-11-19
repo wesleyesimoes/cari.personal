@@ -73,6 +73,11 @@ h3 {
     margin-bottom: 24px;
 }
 
+h4 {
+    color: var(--primary);
+	margin: 16px 0 4px;
+}
+
 p {
     line-height: 1.6;
 	padding-bottom: 10px;
@@ -423,14 +428,11 @@ td {
 }
 
 /* ===== Ajustes para o novo modelo de planos (consultoria mensal) ===== */
-.faq h4 { color: var(--primary); margin: 16px 0 4px; }
-
-.card.destaque { border: 2px solid var(--primary); }
-
 @media (min-width: 768px) {
     .cards.cards-2 { grid-template-columns: repeat(2, 1fr); }
 }
 
+.card.destaque { border: 2px solid var(--primary); }
 .card,
 .card:visited,
 .card:hover,
